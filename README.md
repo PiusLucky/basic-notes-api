@@ -2,7 +2,7 @@
 
 A REST API for a simple Notes application built with Node.js, Express, TypeScript, and PostgreSQL.
 
-## Deploymnent
+## Deployment
 https://basic-notes-api.onrender.com/api-docs
 
 ## Tech Stack
