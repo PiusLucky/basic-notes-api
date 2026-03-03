@@ -56,25 +56,20 @@ Create a PostgreSQL database named `notes_db` (or your preferred name):
 createdb notes_db
 ```
 
-### 4. Run migrations
-
-```bash
-npm run db:migrate
-```
-
-Or, for development without migration history:
-
-```bash
-npm run db:push
-```
-
-### 5. Generate Prisma client
+### 4. Generate Prisma client (first time)
 
 ```bash
 npm run db:generate
 ```
 
-### 6. Start the server
+### 5. Start the server
+
+**Migrations run automatically** on every server start (`npm run dev` or `npm start`). Pending migrations are applied before the server listens. No manual migration step is required for normal use.
+
+For creating new migrations during development:
+```bash
+npm run db:migrate
+```
 
 **Development (with hot reload):**
 ```bash
@@ -87,7 +82,7 @@ npm run build
 npm start
 ```
 
-### 6. Test
+### 6. Run tests (optional)
 ```bash
 npm run test
 ```
