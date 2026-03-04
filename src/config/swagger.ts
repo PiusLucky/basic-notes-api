@@ -11,7 +11,8 @@ const options: swaggerJsdoc.OAS3Options = {
       description: 'REST API for a simple Notes application. Create, read, update, and delete notes.',
     },
     servers: [
-      { url: 'http://localhost:3000', description: 'Development server' },
+      { url: 'https://basic-notes-api.onrender.com', description: 'Staging server' },
+      { url: 'http://localhost:3000', description: 'Development server' }
     ],
     paths: {
       '/api/notes': {
